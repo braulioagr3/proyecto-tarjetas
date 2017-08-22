@@ -9,7 +9,10 @@ public class Tarjeta
     }
     public void Depositar(float Dinero)
     {
-        Saldo = Saldo + Dinero;
+        if(Dinero>0){
+            Saldo = Saldo + Dinero;
+            System.out.println("Saldo no Valido");
+        }
     }
     public void Consultar()
     {
